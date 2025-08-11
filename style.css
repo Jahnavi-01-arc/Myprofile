@@ -1,0 +1,32 @@
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --accent:#0b63ff; --text:#111; --muted:#5b6470;
+  --max:1100px; --radius:12px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter, system-ui, Arial, sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding:28px}
+.site-header{background:linear-gradient(90deg,#ffffffcc,#f8f9ffcc);padding:28px;border-radius:var(--radius);margin:20px 16px;box-shadow:0 8px 24px rgba(15,25,40,0.04)}
+.site-header .left{float:left;margin-right:24px}
+.avatar{width:150px;height:150px;object-fit:cover;border-radius:50%;border:6px solid #fff;box-shadow:0 8px 26px rgba(11,63,155,0.12)}
+.site-header .right h1{margin:12px 0 6px;font-size:28px}
+.role{color:var(--muted);margin:0 0 8px}
+.bio{margin:10px 0 14px;color:var(--muted)}
+.links{display:flex;gap:10px;flex-wrap:wrap}
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;display:inline-block}
+.btn.outline{background:transparent;border:1px solid #dce6ff;color:var(--accent)}
+.main{padding:8px 16px}
+.card{background:var(--card);padding:18px;border-radius:12px;margin:18px 0;box-shadow:0 10px 24px rgba(12,20,40,0.04)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.proj{padding:10px;border-radius:8px;background:#fbfdff;border:1px solid #f0f4ff}
+.skills{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0}
+.skills li{background:#f1f6ff;padding:8px 12px;border-radius:18px;color:var(--muted)}
+.contact-form{display:grid;gap:10px;margin-top:12px}
+.contact-form input,.contact-form textarea{padding:10px;border-radius:8px;border:1px solid #e6eaf0;font-size:14px;width:100%}
+.contact-form button{background:var(--accent);color:#fff;padding:10px;border-radius:8px;border:none;cursor:pointer}
+.small{color:var(--muted);margin-top:10px}
+.site-footer{padding:20px;text-align:center;color:var(--muted);margin-top:12px}
+@media (max-width:880px){
+  .site-header .left{float:none;margin:0 auto 14px;display:flex;justify-content:center}
+  .wrap{padding:18px}
+  .site-header{margin:12px}
+}

@@ -10,7 +10,7 @@
   <header class="site-header">
     <div class="wrap">
       <div class="left">
-        <img src="profile.jpg" alt="Jahnavi Maddi" class="avatar" />
+        <img src="profile" alt="Jahnavi Maddi" class="avatar" />
       </div>
       <div class="right">
         <h1>Jahnavi Maddi</h1>
@@ -88,3 +88,4 @@
   </script>
 </body>
 </html>
+
